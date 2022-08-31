@@ -54,6 +54,7 @@ $ sudo apt update
 $ sudo apt upgrade
 $ sudo apt install php7.3 libapache2-mod-php7.3 php7.3-mysql php7.3-common php7.3-cli php7.3-fpm php7.3-pdo php7.3-mysql php7.3-zip php7.3-gd php7.3-mbstring php7.3-curl php7.3-bcmath php7.3-json php7.3-xml php7.3-xmlrpc php7.3-gd php7.3-imagick php7.3-dev php7.3-imap php7.3-opcache php7.3-soap php7.3-zip php7.3-intl -y
 $ sudo apt install php7.1 libapache2-mod-php7.1 php7.1-mysql php7.1-common php7.1-cli php7.1-fpm php7.1-pdo php7.1-mysql php7.1-zip php7.1-gd php7.1-mbstring php7.1-curl php7.1-bcmath php7.1-json php7.1-xml php7.1-xmlrpc php7.1-gd php7.1-imagick php7.1-dev php7.1-imap php7.1-opcache php7.1-soap php7.1-zip php7.1-intl -y
+$ sudo apt install php7.4 libapache2-mod-php7.4 php7.4-mysql php7.4-common php7.4-cli php7.4-fpm php7.4-pdo php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-bcmath php7.4-json php7.4-xml php7.4-xmlrpc php7.4-gd php7.4-imagick php7.4-dev php7.4-imap php7.4-opcache php7.4-soap php7.4-zip php7.4-intl -y
 ```
 
 ### Configure Apache2 
