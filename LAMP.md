@@ -198,6 +198,8 @@ $ php -i | grep "Loaded Configuration File"
 $ sudo add-apt-repository ppa:certbot/certbot
 $ sudo apt-get update
 $ sudo apt-get install certbot
+#OR
+$ sudo apt install certbot python3-certbot-apache
 $ sudo certbot certonly --standalone --preferred-challenges http -d example.com
 $ sudo ls /etc/letsencrypt/live/example.com
 ```
