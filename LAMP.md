@@ -200,6 +200,6 @@ $ sudo apt-get update
 $ sudo apt-get install certbot
 #OR
 $ sudo apt install certbot python3-certbot-apache
-$ sudo certbot certonly --standalone --preferred-challenges tls-sni http -d example.com
+$ sudo certbot --nginx --apache -d example.com
 $ sudo ls /etc/letsencrypt/live/example.com
 ```
