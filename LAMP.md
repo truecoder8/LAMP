@@ -197,7 +197,7 @@ $ php -i | grep "Loaded Configuration File"
 ```sh
 $ sudo add-apt-repository ppa:certbot/certbot
 $ sudo apt-get update
-$ sudo apt-get install certbot
+$ sudo apt install certbot python3-certbot-nginx
 #OR
 $ sudo apt install certbot python3-certbot-apache
 $ sudo certbot --nginx --apache -d example.com
