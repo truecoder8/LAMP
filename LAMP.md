@@ -29,6 +29,7 @@ sudo apt install nginx
 
 sudo nano /etc/nginx/sites-available/your_domain
 sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
+sudo nginx -t
 ```
 
 ---
