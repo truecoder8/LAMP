@@ -22,6 +22,17 @@ $ sudo chown -R $USER:www-data /var/www
 
 ---
 
+### Install Nginx
+```sh
+sudo apt update
+sudo apt install nginx
+
+sudo nano /etc/nginx/sites-available/your_domain
+sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
+```
+
+---
+
 ### Install Mysql Server
 ```sh
 $ sudo apt install mysql-server
