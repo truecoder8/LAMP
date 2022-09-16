@@ -192,3 +192,12 @@ $ sudo apt-get purge `dpkg -l | grep zend | awk '{print $2}'`
 $ sudo update-alternatives --install /usr/bin/php php /usr/local/zend/php/active/bin/php 1
 $ php -i | grep "Loaded Configuration File"
 ```
+
+### Certbot install
+```sh
+$ sudo add-apt-repository ppa:certbot/certbot
+$ sudo apt-get update
+$ sudo apt-get install certbot
+$ sudo certbot certonly --standalone --preferred-challenges http -d example.com
+$ sudo ls /etc/letsencrypt/live/example.com
+```
