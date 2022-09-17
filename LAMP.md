@@ -84,6 +84,13 @@ $ sudo nano /etc/apache2/mods-enabled/dir.conf
 sudo sh -c "a2enmod proxy_fcgi setenvif; a2enmod rewrite; a2enconf php7.4-fpm; a2enmod proxy_fcgi setenvif"
 ```
 
+```sh
+$ sudo a2query -m
+$ sudo a2dismod php7.4
+$ sudo a2dismod mpm_prefork
+$ sudo a2enmod mpm_event
+```
+
 #### restart Apache2
 ```sh
 $ sudo systemctl restart apache2
