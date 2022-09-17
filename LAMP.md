@@ -81,7 +81,11 @@ $ sudo nano /etc/apache2/mods-enabled/dir.conf
 ```
 
 ```sh
-sudo sh -c "a2enmod proxy_fcgi setenvif; a2enmod rewrite; a2enconf php7.4-fpm; a2enmod proxy_fcgi setenvif"
+$ sudo sh -c "a2enmod proxy_fcgi setenvif; a2enmod rewrite; a2enconf php7.4-fpm; a2enmod proxy_fcgi setenvif"
+```
+
+```sh
+$ sudo a2enmod actions
 ```
 
 ```sh
