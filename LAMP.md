@@ -214,3 +214,40 @@ $ sudo apt install certbot python3-certbot-apache
 $ sudo certbot --nginx --apache -d example.com
 $ sudo ls /etc/letsencrypt/live/example.com
 ```
+
+<hr>
+
+# ubuntu18.04_php7.3_sqlsrv.sh
+
+```
+#!/bin/bash
+
+#ubuntu 18.04
+#php7.3
+
+
+# install php ppa
+apt -y install software-properties-common
+add-apt-repository ppa:ondrej/php -y
+apt update
+
+# install php w/o apache
+apt -y install php7.3-cli php7.3-mbstring php-pear php7.3-dev php7.3-curl php7.3-gd php7.3-zip php7.3-xml
+
+# install sqlcmd
+curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
+curl https://packages.microsoft.com/config/ubuntu/18.04/prod.list | tee /etc/apt/sources.list.d/mssql-tools.list
+apt update
+ACCEPT_EULA=Y apt -y install msodbcsql17
+echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
+echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
+source ~/.bashrc
+apt -y install unixodbc-dev
+
+# install sqlsrv driver
+# if this fails install sqlsrv-5.5.0preview & pdo_sqlsrv-5.5.0preview
+pecl install sqlsrv pdo_sqlsrv
+printf "; priority=20\nextension=sqlsrv.so\n" > /etc/php/7.3/mods-available/sqlsrv.ini
+printf "; priority=30\nextension=pdo_sqlsrv.so\n" > /etc/php/7.3/mods-available/pdo_sqlsrv.ini
+phpenmod -v 7.3 sqlsrv pdo_sqlsrv
+```
