@@ -100,6 +100,12 @@ $ sudo a2enmod mpm_event
 $ sudo systemctl restart apache2
 ```
 
+
+#### Change php cli version
+```sh
+$ sudo update-alternatives --set php /usr/bin/php7.4
+```
+
 #### Check Apache2 status
 ```sh
 $ sudo systemctl status apache2
