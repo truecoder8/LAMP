@@ -37,7 +37,7 @@ sudo nginx -t
 ### Install Mysql Server
 ```sh
 $ sudo apt install mysql-server
-$ sudo mysql_secure_installation
+$ sudo mysql_secure_installation (useless in latest versions)
 ```
 
 ### Configure root mysql user
