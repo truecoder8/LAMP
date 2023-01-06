@@ -15,13 +15,6 @@ $ sudo apt update
 $ sudo apt install apache2
 ```
 
-### Add current user to server group "www-data"
-```sh
-$ sudo chown -R $USER:www-data /var/www
-```
-
----
-
 ### Install Nginx
 ```sh
 sudo apt update
@@ -32,7 +25,13 @@ sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
 sudo nginx -t
 ```
 
+### Add current user to server group "www-data"
+```sh
+$ sudo chown -R $USER:www-data /var/www
+```
+
 ---
+
 
 ### Install Mysql Server
 ```sh
