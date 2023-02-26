@@ -182,6 +182,10 @@ $ source ~/.profile
 $ source ~/.bashrc
 $ nvm ls-remote
 ```
+### M1
+```sh
+$ source $(brew --prefix nvm)/nvm.sh
+```
 
 #### Install NodeJS v12
 ```sh
