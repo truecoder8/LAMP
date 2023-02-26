@@ -184,7 +184,10 @@ $ nvm ls-remote
 ```
 ### M1
 ```sh
-$ source $(brew --prefix nvm)/nvm.sh
+$ echo 'export NVM_DIR=~/.nvm' >> ~/.zshrc
+$ echo '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"' >> ~/.zsh
+$ echo 'export NVM_DIR=~/.nvm' >> ~/.zshrc
+$ echo '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"' >> ~/.zsh
 ```
 
 #### Install NodeJS v12
