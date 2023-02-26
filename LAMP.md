@@ -51,6 +51,11 @@ mysql> FLUSH PRIVILEGES;
 mysql> SELECT user,authentication_string,plugin,host FROM mysql.user;
 mysql> exit
 ```
+
+#### pgsql
+```sql
+CREATE ROLE username WITH LOGIN SUPERUSER PASSWORD 'password';
+```
 ### Load Time Zones
 ```sh
 $ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root -p mysql
